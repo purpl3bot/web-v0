@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout'
 
 const images = [
-  '/image1.jpg',
-  '/image2.jpg',
-  '/image3.jpg',
-  // Add more image paths as needed
+  { src: '/image1.jpg', width: 800, height: 600 },
+  { src: '/image2.jpg', width: 700, height: 900 },
+  { src: '/image3.jpg', width: 900, height: 700 },
+  // Add more images with their respective dimensions
 ]
 
 export default function Home() {
@@ -20,13 +20,16 @@ export default function Home() {
 
   return (
     <Layout>
-      <div>
-        <div className="relative w-full h-[70vh] overflow-hidden">
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
           <Image
-            src={images[currentImage]}
-            alt="Artwork"
-            layout="fill"
-            objectFit="cover"
+            src={images[currentImage].src}
+            alt={`Artwork ${currentImage + 1}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{
+              objectFit: 'contain',
+            }}
             onClick={nextImage}
             className="transition-opacity duration-500 cursor-pointer"
           />
