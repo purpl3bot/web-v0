@@ -1,7 +1,5 @@
-'use client'
-
 import Image from 'next/image'
-import Layout from '../../components/Layout'
+import Layout from '@/components/Layout'
 
 export default function About() {
   return (
@@ -20,7 +18,6 @@ export default function About() {
               alt="Artwork example"
               width={600}
               height={400}
-              layout="responsive"
               className="rounded-lg"
             />
           </div>
@@ -36,7 +33,6 @@ export default function About() {
               alt="Exhibition photo"
               width={600}
               height={400}
-              layout="responsive"
               className="rounded-lg"
             />
           </div>
@@ -47,3 +43,15 @@ export default function About() {
               including your background, education, and significant milestones in your artistic career.
             </p>
             <Image
+              src="/placeholder.svg?height=400&width=600"
+              alt="Artist portrait"
+              width={600}
+              height={400}
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
+}
