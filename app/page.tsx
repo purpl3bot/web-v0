@@ -31,12 +31,10 @@ export default function Home() {
             className="transition-opacity duration-500 cursor-pointer"
           />
         </div>
-        <div className="mt-8">
-          <textarea
-            className="w-full h-32 p-2 border border-gray-300 rounded"
-            placeholder="Enter your text here..."
-          ></textarea>
-        </div>
+        <p className="mb-4">
+              Your artist statement goes here. This is a placeholder text. Replace it with your actual statement
+              about your art, your inspirations, and your creative process.
+        </p>
       </div>
     </Layout>
   )
