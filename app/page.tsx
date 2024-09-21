@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Layout>
       <div>
-        <div className="relative h-full h-[70vh] overflow-hidden">
+        <div className="relative w-[70vw] h-full overflow-hidden">
           <Image
             src={images[currentImage]}
             alt="Artwork"
