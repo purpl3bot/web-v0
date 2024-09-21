@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Layout from '../../components/Layout'
 import Pdf from '@/public'
 
+export default function About() {
   return (
     <Layout>
       <div>
