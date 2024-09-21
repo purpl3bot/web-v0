@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${spectral.variable} ${astloch.variable}`}>
-      <body className={spectral.className astloch.className}>{children}</body>
+      <body className={spectral.className}>{children}</body>
     </html>
   )
 }
