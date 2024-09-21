@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-spectral: var(--font-spectral);
+  --font-astloch: var(--font-astloch);
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+.font-spectral {
+  font-family: var(--font-spectral);
+}
+
+.font-astloch {
+  font-family: var(--font-astloch);
+}
