@@ -31,7 +31,7 @@ export default function Home() {
               objectFit: 'contain',
             }}
             onClick={nextImage}
-            className="transition-opacity duration-500 cursor-pointer"
+            className="transition-opacity duration-100 cursor-pointer"
           />
         </div>
         <p className="mb-4">
