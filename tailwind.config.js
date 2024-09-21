@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         spectral: ['var(--font-spectral)'],
         astloch: ['var(--font-astloch)'],
+        sourcesans3: ['var(--font-sourcesans3)'],
       },
     },
   },
