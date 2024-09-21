@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex">
         <nav className="w-64 p-8 flex flex-col justify-between h-screen fixed">
           <div>
-            <Link href="/" className="block mb-8 text-2xl font-astloch">
+            <Link href="/" className="font-astloch block mb-8 text-2xl">
               mercedes farias
             </Link>
             <Link href="/portfolio" className="block mb-4">
