@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen font-spectral">
-      <div className="fixed top-4 right-4 text-red-800 text-sm">
+      <div className="fixed top-4 right-4 text-red-700 text-sm">
         UPCOMING: 26-29 Sept. 2Chairs Group Show
       </div>
       <div className="flex">
@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
           <div>
             <a href="mailto:mechi.farias@gmail.com" className="block mb-2">
-              email: mechi.farias@gmail.com
+              mechi.farias@gmail.com
             </a>
             <a
               href="https://www.instagram.com/mechifariasu.u"
