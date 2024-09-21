@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen font-spectral">
-      <div className="fixed top-4 right-4 text-red-700 text-sm">
+    <div className="min-h-screen">
+      <div className="font-spectral fixed top-4 right-4 text-red-700 text-sm">
         UPCOMING: 26-29 Sept. 2Chairs Group Show
       </div>
       <div className="flex">
@@ -12,22 +12,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/" className="font-astloch block mb-8 text-2xl">
               mercedes farias
             </Link>
-            <Link href="/portfolio" className="block mb-4">
+            <Link href="/portfolio" className="font-spectral block mb-4">
               portfolio
             </Link>
-            <Link href="/about" className="block mb-4">
+            <Link href="/about" className="font-spectral block mb-4">
               about
             </Link>
           </div>
           <div>
-            <a href="mailto:mechi.farias@gmail.com" className="block mb-2">
+            <a href="mailto:mechi.farias@gmail.com" className="font-spectral block mb-2">
               mechi.farias@gmail.com
             </a>
             <a
               href="https://www.instagram.com/mechifariasu.u"
               target="_blank"
               rel="noopener noreferrer"
-              className="block"
+              className="font-spectral block"
             >
               instagram
             </a>
