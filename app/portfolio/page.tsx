@@ -1,20 +1,7 @@
 'use client'
-import React from 'react';
-import { Document, Page } from 'react-pdf';
+
 import { useState, useEffect } from 'react'
 import Layout from '@/components/Layout'
-
-const PDFViewer = () => {
- const pdfURL = 'portfolio.pdf';
-return (
- <div>
- <Document file={pdfURL}>
- <Page pageNumber={1} />
- </Document>
- </div>
- );
-};
-export default PDFViewer;
 
 export default function Portfolio() {
   const [pdfContent, setPdfContent] = useState<string>('')
@@ -45,7 +32,20 @@ export default function Portfolio() {
     <Layout>
         <div className="flex flex-col items-center justify-center min-h-screen "> 
         <div className="w-full max-w-4xl mx-auto">
-          PDFViewer
+          <div className="bg-white p-8 rounded shadow-lg">
+           {isLoading ? (
+              <p>Loading portfolio content...</p>
+            ) : error ? (
+            <p className="text-red-500">{error}</p>
+            ) : pdfContent ? (
+              pdfContent.split('\n').map((paragraph, index) => (
+                <p key={index} className="mb-4">{paragraph}</p>
+              ))
+            ) : (
+              <p>No content available.</p>
+            )}
+          </div>
+        </div>
         <a
           href="/portfolio.pdf"
           download
