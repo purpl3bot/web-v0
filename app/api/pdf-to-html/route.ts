@@ -4,7 +4,7 @@ import path from 'path'
 import PDFParser from 'pdf2json'
 
 export async function GET() {
-  const pdfParser = new PDFParser(null, 1)
+  const pdfParser = new PDFParser()
 
   return new Promise((resolve) => {
     pdfParser.on('pdfParser_dataError', (errData: any) => {
