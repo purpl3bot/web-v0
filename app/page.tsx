@@ -35,8 +35,18 @@ export default function Home() {
           />
         </div>
         <p className="mb-4">
-              Your artist statement goes here. This is a placeholder text. Replace it with your actual statement
-              about your art, your inspirations, and your creative process.
+              there was a small seed in the
+garden. a shadow on its surface
+that i could barely see made me
+suspect that something was
+hiding in the total darkness
+within. with the shiny edge of a
+scalpel, i pierced it, letting the
+light in. with the microscope i
+slowly focused on the blurred
+spot: at the bottom of the seed,
+there was an eye. an eye very
+similar to mine.
         </p>
       </div>
     </Layout>
