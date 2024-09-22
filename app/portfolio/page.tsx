@@ -29,8 +29,10 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <Layout> 
+    <Layout>
+        <div className="flex flex-col items-center justify-center min-h-screen "> 
         <div className="w-full max-w-4xl mx-auto">
+          <div className="bg-white p-8 rounded shadow-lg">
           {isLoading ? (
               <p>Loading portfolio content...</p>
             ) : error ? (
