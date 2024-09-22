@@ -33,7 +33,18 @@ export default function Portfolio() {
         <div className="flex flex-col items-center justify-center min-h-screen "> 
         <div className="w-full max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded shadow-lg">
-           src="/portfolio.pdf"
+           {isLoading ? (
+              <p>Loading portfolio content...</p>
+            ) : error ? (
+            <p className="text-red-500">{error}</p>
+            ) : pdfContent ? (
+              pdfContent.split('\n').map((paragraph, index) => (
+                <p key={index} className="mb-4">{paragraph}</p>
+              ))
+            ) : (
+              <p>No content available.</p>
+            )}
+
           </div>
         </div>
         <a
