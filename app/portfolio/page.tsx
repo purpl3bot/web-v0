@@ -22,7 +22,6 @@ export default function Portfolio() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-3xl font-astloch mb-6">Portfolio</h1>
         {pdfUrl ? (
           <>
             <iframe
@@ -34,9 +33,9 @@ export default function Portfolio() {
               href={pdfUrl}
               download="Mercedes_Farias_Portfolio.pdf"
               onClick={handleDownload}
-              className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors"
+              className="text-black px-4 py-2 hover: transition-colors"
             >
-              Download Portfolio
+              Download
             </a>
           </>
         ) : (
