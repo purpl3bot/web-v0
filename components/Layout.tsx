@@ -4,7 +4,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen">
       <div className="font-spectral fixed top-4 right-4 text-red-700 text-sm">
-        UPCOMING: 26-29 Sept. 2Chairs Group Show
+        UPCOMING: 26-29 Sept. 
+        2Chairs Group Show
       </div>
       <div className="flex">
         <nav className="w-64 p-8 flex flex-col justify-between h-screen fixed">
