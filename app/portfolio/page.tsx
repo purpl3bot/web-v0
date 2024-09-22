@@ -8,7 +8,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     // Fetch the PDF URL from an API or use a static URL
-    setPdfUrl('public/portfolio.pdf')
+    setPdfUrl('/portfolio.pdf')
   }, [])
 
   const handleDownload = () => {
