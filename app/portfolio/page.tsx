@@ -31,13 +31,12 @@ export default function Portfolio() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-3xl font-astloch mb-6">Portfolio</h1>
         <div className="w-full max-w-4xl mx-auto">
-          <div className="bg-white p-8 rounded shadow-lg">
+         // <div className="bg-white p-8 rounded shadow-lg">
             {isLoading ? (
               <p>Loading portfolio content...</p>
             ) : error ? (
-              <p className="text-red-500">{error}</p>
+            <p className="text-red-500">{error}</p>
             ) : pdfContent ? (
               pdfContent.split('\n').map((paragraph, index) => (
                 <p key={index} className="mb-4">{paragraph}</p>
