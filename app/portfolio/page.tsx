@@ -32,7 +32,8 @@ export default function Portfolio() {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="w-full max-w-4xl mx-auto">
-            {isLoading ? (
+         <div className="bg-white p-8 rounded shadow-lg">
+          {isLoading ? (
               <p>Loading portfolio content...</p>
             ) : error ? (
             <p className="text-red-500">{error}</p>
