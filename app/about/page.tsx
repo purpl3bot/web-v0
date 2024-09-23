@@ -5,28 +5,21 @@ export default function About() {
   return (
     <Layout>
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-2xl mb-6 font-astloch">About Mercedes Farias</h2>
+        <h2 className="text-2xl mb-6 font-astloch"></h2>
         <div className="space-y-8">
           <div>
-            <h3 className="text-xl mb-4">Artist Statement</h3>
+            <h3 className="text-xl mb-4"></h3>
             <p className="mb-4">
             </p>
-            <Image
-              src="/placeholder.svg?height=400&width=600"
-              alt="Artwork example"
-              width={600}
-              height={400}
-              className="rounded-lg"
-            />
           </div>
           <div>
             <h3 className="text-xl mb-4">Solo Shows</h3>
-            <ul className="list-disc list-inside mb-4">
+            <ul className="list-none list-inside mb-4">
               <li>2024 - Clavicles & Twigs, Graw Böckler Garage, Berlin</li>
               <li>2024 - Oficina de disección, 101Montón, Buenos Aires</li>
             </ul>
             <h3 className="text-xl mb-4">Group Shows</h3>
-            <ul className="list-disc list-inside mb-4">
+            <ul className="list-none list-inside mb-4">
               <li>2024 - Balancing the Scales, 2Chairs, Berlin</li>
               <li>2024 - Plus one, West Germany, Berlin</li>
               <li>2024 - Solaria, Puticlú, Buenos Aires</li>
@@ -46,10 +39,8 @@ export default function About() {
             />
           </div>
           <div>
-            <h3 className="text-xl mb-4">Artist Bio</h3>
+            <h3 className="text-xl mb-4"></h3>
             <p className="mb-4">
-              Your biography goes here. This is a placeholder text. Replace it with your actual biography,
-              including your background, education, and significant milestones in your artistic career.
             </p>
             <Image
               src="/placeholder.svg?height=400&width=600"
