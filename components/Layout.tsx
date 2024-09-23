@@ -2,33 +2,38 @@ import Link from 'next/link'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen">
-      <div className="font-spectral fixed top-4 right-4 text-red-700 text-sm">
-        UPCOMING: 26-29 Sept. 
+    <div className="min-h-screen font-source-sans-3">
+      <div className="fixed top-4 right-4 text-red-800 text-sm">
+        UPCOMING: 26-29 Sept 
         2Chairs Group Show
       </div>
       <div className="flex">
         <nav className="w-64 p-8 flex flex-col justify-between h-screen fixed">
           <div>
-            <Link href="/" className="font-astloch block mb-8 text-2xl">
+            <Link href="/" className="block mb-8 text-2xl font-astloch">
               mercedes farias
             </Link>
-            <Link href="/portfolio" className="font-spectral block mb-4">
+            <a
+              href="/portfolio.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mb-4"
+            >
               portfolio
-            </Link>
-            <Link href="/about" className="font-spectral block mb-4">
+            </a>
+            <Link href="/about" className="block mb-4">
               about
             </Link>
           </div>
           <div>
-            <a href="mailto:mechi.farias@gmail.com" className="font-spectral block mb-2">
+            <a href="mailto:mechi.farias@gmail.com" className="block mb-2">
               mechi.farias@gmail.com
             </a>
             <a
               href="https://www.instagram.com/mechifariasu.u"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-spectral block"
+              className="block"
             >
               instagram
             </a>
