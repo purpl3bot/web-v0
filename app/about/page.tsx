@@ -31,20 +31,8 @@ export default function About() {
               <li>2018 - Chin Chin, Galería Amistad, Buenos Aires</li>
             </ul>
             <Image
-              src="public/image2.jpg?height=400&width=600"
+              src="/portrait.jpg?height=400&width=600"
               alt="Exhibition photo"
-              width={600}
-              height={400}
-              className="rounded-lg"
-            />
-          </div>
-          <div>
-            <h3 className="text-xl mb-4"></h3>
-            <p className="mb-4">
-            </p>
-            <Image
-              src="/public/portrait?height=400&width=600"
-              alt="Artist portrait"
               width={600}
               height={400}
               className="rounded-lg"
