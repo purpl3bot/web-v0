@@ -32,10 +32,9 @@ export default function About() {
             </ul>
             <Image
               src="/portrait.jpg?height=400&width=600"
-              alt="Exhibition photo"
+              alt="Portrait"
               width={600}
               height={400}
-              className="rounded-lg"
             />
           </div>
         </div>
