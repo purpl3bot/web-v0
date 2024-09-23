@@ -21,9 +21,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             >
               portfolio
             </a>
-            /** <  Link href="/about" className="block mb-4"> */
-             /** about */
-            /** </   Link> */
+            <Link href="/about" className="block mb-4">
+             about
+            </Link>
           </div>
           <div>
             <div>
