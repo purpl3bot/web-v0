@@ -6,7 +6,7 @@ import Layout from '@/components/Layout'
 
 const images = [
   { src: '/image1.jpg', width: 800, height: 600 },
-  { src: '/image2.jpg', width: 700, height: 900 },
+  { src: '/image2.jpeg', width: 700, height: 900 },
   { src: '/image3.jpg', width: 900, height: 700 },
   // Add more images with their respective dimensions
 ]
