@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${sourceSans3.variable} ${astloch.variable}`}>
-      <body className={sourceSans3.className}>{children}</body>
+      <body className={`${sourceSans3.variable} ${astloch.variable}`}>{children}</body>
     </html>
   )
 }
