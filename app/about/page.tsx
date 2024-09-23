@@ -28,7 +28,7 @@ export default function About() {
               <li>2022 - Paula Bakun & Mercedes Farias en las ruinas de Ciudad Universitaria, OhNo Gallery, Tucumán, Argentina</li>
               <li>2021 - Krit-Kölln Beilage, Lebensmittel Projekt, Berlin</li>
               <li>2020 - Further down the drain, OhNo Gallery, London, Buenos Aires</li>
-              <li>2018 - Chin Chin, Galería Amistad, Bueno Aires</li>
+              <li>2018 - Chin Chin, Galería Amistad, Buenos Aires</li>
             </ul>
             <Image
               src="/placeholder.svg?height=400&width=600"
