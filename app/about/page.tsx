@@ -43,7 +43,7 @@ export default function About() {
             <p className="mb-4">
             </p>
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/public/portrait?height=400&width=600"
               alt="Artist portrait"
               width={600}
               height={400}
