@@ -5,12 +5,12 @@ export default function About() {
   return (
     <Layout>
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-2xl mb-6 font-astloch"> </h2>
+        <h2 className="text-2xl mb-6 font-astloch"> bhjb </h2>
         <div className="space-y-8">
           <div>
             <h3 className="text-xl mb-4">Artist Statement</h3>
             <p className="mb-4">
-              
+              bhj
             </p>
             <Image
               src="/placeholder.svg?height=400&width=600"
@@ -48,7 +48,7 @@ export default function About() {
           <div>
             <h3 className="text-xl mb-4"> </h3>
             <p className="mb-4">
-            
+            bhjb
             </p>
             <Image
               src="/placeholder.svg?height=400&width=600"
