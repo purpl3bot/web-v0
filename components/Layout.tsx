@@ -26,9 +26,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </Link>
           </div>
           <div>
-            <a href="mailto:mechi.farias@gmail.com" className="block mb-2">
-              mechi.farias@gmail.com
-            </a>
+            <div>
+              mechi.farias at gmail.com
+            </div>
             <a
               href="https://www.instagram.com/mechifariasu.u"
               target="_blank"
