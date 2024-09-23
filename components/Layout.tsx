@@ -4,7 +4,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen">
       <div className="fixed top-4 right-4 text-red-800 text-sm">
-        UPCOMING: 26-29 Sept 
+        UPCOMING: 26-29 Sept
+      </div>
+      <div className="fixed top-4 right-4 text-red-800 text-sm"> 
         2Chairs Group Show
       </div>
       <div className="flex">
