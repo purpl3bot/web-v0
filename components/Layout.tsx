@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <div className="flex">
         <nav className="w-64 p-8 flex flex-col justify-between h-screen fixed">
-          <div>
+          <div className="hover:bg-yellow-100 hover:text-black">
             <Link href="/" className="block mb-8 text-3xl font-astloch font-bold">
               mercedes farias
             </Link>
@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               href="https://www.instagram.com/mechifariasu.u"
               target="_blank"
               rel="noopener noreferrer"
-              className="block"
+              className="block hover:bg-yellow-100 hover:text-black"
             >
               instagram
             </a>
