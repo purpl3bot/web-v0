@@ -1,12 +1,12 @@
 import './globals.css'
-import { Spectral, Astloch } from 'next/font/google'
+import { Source_Sans_3, Astloch } from 'next/font/google'
 
-const spectral = Spectral({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-spectral' })
+const sourceSans3 = Source_Sans_3({ subsets: ['latin'], variable: '--font-source-sans-3' })
 const astloch = Astloch({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-astloch' })
 
 export const metadata = {
-  title: 'Mercedes Farias - Dark Art',
-  description: 'Portfolio of Mercedes Farias, dark artist',
+  title: 'Mercedes Farias',
+  description: 'Portfolio of Mercedes Farias',
 }
 
 export default function RootLayout({
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${spectral.variable} ${astloch.variable}`}>
-      <body className={spectral.className}>{children}</body>
+    <html lang="en" className={`${sourceSans3.variable} ${astloch.variable}`}>
+      <body className={sourceSans3.className}>{children}</body>
     </html>
   )
 }
