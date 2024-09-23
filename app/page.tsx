@@ -35,7 +35,7 @@ export default function Home() {
             className="transition-opacity duration-200 cursor-pointer"
           />
         </div>
-        <p className="mb-4 selection:bg-yellow-100 selection:text-black">
+        <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
 garden. a shadow on its surface
 that i could barely see made me
