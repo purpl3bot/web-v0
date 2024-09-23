@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               href="https://www.instagram.com/mechifariasu.u"
               target="_blank"
               rel="noopener noreferrer"
-              className="block hover:bg-yellow-100 hover:text-black"
+              className="block hover:bg-lime-100 hover:text-black"
             >
               instagram
             </a>
