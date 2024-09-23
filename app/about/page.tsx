@@ -10,8 +10,6 @@ export default function About() {
           <div>
             <h3 className="text-xl mb-4">Artist Statement</h3>
             <p className="mb-4">
-              Your artist statement goes here. This is a placeholder text. Replace it with your actual statement
-              about your art, your inspirations, and your creative process.
             </p>
             <Image
               src="/placeholder.svg?height=400&width=600"
