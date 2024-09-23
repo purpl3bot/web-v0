@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        spectral: ['var(--font-spectral)'],
+        source-sans-3: ['var(--font-source-sans-3)'],
         astloch: ['var(--font-astloch)'],
       },
     },
