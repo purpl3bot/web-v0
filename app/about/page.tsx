@@ -13,12 +13,12 @@ export default function About() {
             </p>
           </div>
           <div>
-            <h3 className="text-xl mb-4">Solo Shows</h3>
+            <h3 className="text-xl mb-4 font-astloch">Solo Shows</h3>
             <ul className="list-none list-inside mb-4">
               <li>2024 - Clavicles & Twigs, Graw Böckler Garage, Berlin</li>
               <li>2024 - Oficina de disección, 101Montón, Buenos Aires</li>
             </ul>
-            <h3 className="text-xl mb-4">Group Shows</h3>
+            <h3 className="text-xl mb-4 font-astloch">Group Shows</h3>
             <ul className="list-none list-inside mb-4">
               <li>2024 - Balancing the Scales, 2Chairs, Berlin</li>
               <li>2024 - Plus one, West Germany, Berlin</li>
