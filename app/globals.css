@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-spectral: var(--font-spectral);
+  --font-source-sans-3: var(--font-source-sans-3);
   --font-astloch: var(--font-astloch);
 }
 
@@ -12,8 +12,8 @@ body {
   color: #333;
 }
 
-.font-spectral {
-  font-family: var(--font-spectral);
+.font-source-sans-3 {
+  font-family: var(--font-source-sans-3);
 }
 
 .font-astloch {
