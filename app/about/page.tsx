@@ -22,11 +22,22 @@ export default function About() {
             />
           </div>
           <div>
-            <h3 className="text-xl mb-4">Exhibitions</h3>
+            <h3 className="text-xl mb-4">Solo Shows</h3>
             <ul className="list-disc list-inside mb-4">
-              <li>2023 - Solo Exhibition, Gallery Name, City, Country</li>
-              <li>2022 - Group Show "Art in the Dark", Another Gallery, Another City</li>
-              <li>2021 - Biennale of Contemporary Art, Big Museum, Capital City</li>
+              <li>2024 - Clavicles & Twigs, Graw Böckler Garage, Berlin</li>
+              <li>2024 - Oficina de disección, 101Montón, Buenos Aires</li>
+            </ul>
+            <h3 className="text-xl mb-4">Group Shows</h3>
+            <ul className="list-disc list-inside mb-4">
+              <li>2024 - Balancing the Scales, 2Chairs, Berlin</li>
+              <li>2024 - Plus one, West Germany, Berlin</li>
+              <li>2024 - Solaria, Puticlú, Buenos Aires</li>
+              <li>2022 - Garagen Festival, Graw Böckler Garage, Berlin</li>
+              <li>2022 - Zeitraum für Zweifel, Top e.v., Berlin</li>
+              <li>2022 - Paula Bakun & Mercedes Farias en las ruinas de Ciudad Universitaria, OhNo Gallery, Tucumán, Argentina</li>
+              <li>2021 - Krit-Kölln Beilage, Lebensmittel Projekt, Berlin</li>
+              <li>2020 - Further down the drain, OhNo Gallery, London, Buenos Aires</li>
+              <li>2018 - Chin Chin, Galería Amistad, Bueno Aires</li>
             </ul>
             <Image
               src="/placeholder.svg?height=400&width=600"
