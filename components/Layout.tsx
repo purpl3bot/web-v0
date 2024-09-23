@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen font-source-sans-3">
+    <div className="min-h-screen">
       <div className="fixed top-4 right-4 text-red-800 text-sm">
         UPCOMING: 26-29 Sept 
         2Chairs Group Show
