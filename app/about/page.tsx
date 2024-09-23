@@ -4,7 +4,7 @@ import Layout from '@/components/Layout'
 export default function About() {
   return (
     <Layout>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto selection:bg-yellow-100 selection:text-black">
         <h2 className="text-2xl mb-6 font-astloch"></h2>
         <div className="space-y-8">
           <div>
