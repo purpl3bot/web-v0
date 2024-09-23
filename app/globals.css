@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --font-source-sans-3: var(--font-source-sans-3);
-  --font-astloch: var(--font-astloch);
+  --font-source-sans-3: 'Source Sans 3', sans-serif;
+  --font-astloch: 'Astloch', cursive;
 }
 
 body {
   background-color: #f3f3f3;
   color: #333;
+  font-family: var(--font-source-sans-3), var(--font-astloch);
 }
 
 .font-source-sans-3 {
