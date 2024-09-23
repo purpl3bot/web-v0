@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen">
-      <div className="flex flex-col top-4 right-4 text-red-600 text-sm">
+      <div className="fixed flex-col top-4 right-4 text-red-600 text-sm">
         <div>UPCOMING: 26-29 Sept</div>
         <div>2Chairs Group Show</div>
       </div>
