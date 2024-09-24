@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen -mt-16 lg:mt-0">
-        <div className="relative w-full max-w-4xl aspect-[4/3] mb-8">
+        <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
           {images.map((image, index) => (
             <Image
               key={image.src}
