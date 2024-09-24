@@ -24,7 +24,7 @@ export default function Home() {
       setTimeout(() => {
         setCurrentImage((prev) => (prev + 1) % images.length)
         setIsTransitioning(false)
-      }, 500) // Half a second for fade out/in effect
+      }, 1000) // 1 second for fade out/in effect
     }, TRANSITION_DELAY)
 
     return () => clearInterval(timer)
@@ -35,13 +35,13 @@ export default function Home() {
     setTimeout(() => {
       setCurrentImage((prev) => (prev + 1) % images.length)
       setIsTransitioning(false)
-    }, 700)
+    }, 1000)
   }
 
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen -mt-16 lg:mt-0">
-        <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
+        <div className="relative w-full max-w-4xl aspect-[4/3] mb-8">
           {images.map((image, index) => (
             <Image
               key={image.src}
@@ -52,12 +52,12 @@ export default function Home() {
               style={{
                 objectFit: 'contain',
               }}
-            className={`transition-opacity duration-500 cursor-pointer ${
+              className={`transition-opacity duration-500 cursor-pointer ${
                 index === currentImage ? 'opacity-100' : 'opacity-0'
               } ${isTransitioning ? 'opacity-50' : ''}`}
-            onClick={nextImage}
-          />
-        ))}
+              onClick={nextImage}
+            />
+          ))}
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
