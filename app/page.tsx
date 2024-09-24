@@ -22,12 +22,12 @@ export default function Home() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
+        <div className="relative w-full max-w-4xl aspect-[4/3] mb-8">
           <Image
             src={images[currentImage].src}
             alt={`Artwork ${currentImage + 1}`}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
             style={{
               objectFit: 'contain',
             }}
