@@ -12,28 +12,52 @@ const images = [
   // Add more images with their respective dimensions
 ]
 
+const TRANSITION_DELAY = 7000 // 7 seconds
+
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0)
+  const [isTransitioning, setIsTransitioning] = useState(false)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsTransitioning(true)
+      setTimeout(() => {
+        setCurrentImage((prev) => (prev + 1) % images.length)
+        setIsTransitioning(false)
+      }, 500) // Half a second for fade out/in effect
+    }, TRANSITION_DELAY)
+
+    return () => clearInterval(timer)
+  }, [])
 
   const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length)
+    setIsTransitioning(true)
+    setTimeout(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length)
+      setIsTransitioning(false)
+    }, 700)
   }
 
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen -mt-16 lg:mt-0">
         <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
-          <Image
-            src={images[currentImage].src}
-            alt={`Artwork ${currentImage + 1}`}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
-            style={{
-              objectFit: 'contain',
-            }}
+          {images.map((image, index) => (
+            <Image
+              key={image.src}
+              src={image.src}
+              alt={`Artwork ${index + 1}`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+              style={{
+                objectFit: 'contain',
+              }}
+            className={`transition-opacity duration-500 cursor-pointer ${
+                index === currentImage ? 'opacity-100' : 'opacity-0'
+              } ${isTransitioning ? 'opacity-50' : ''}`}
             onClick={nextImage}
-            className="transition-opacity duration-200 cursor-pointer"
           />
+        ))}
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
