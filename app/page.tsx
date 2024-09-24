@@ -34,8 +34,8 @@ export default function Home() {
             onClick={nextImage}
             className="transition-opacity duration-200 cursor-pointer"
           />
-          <p>
-          '  > '
+          <p selection:bg-stone-100>
+          '>'
           </p>
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
