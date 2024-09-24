@@ -1,8 +1,12 @@
 import Link from 'next/link'
+import MobileMenu from './MobileMenu'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen">
+      <div className="lg:hidden fixed top-4 left-4 z-50">
+        <MobileMenu />
+      </div>
       <div className="fixed flex-col top-4 right-4 text-lime-100 text-sm selection:bg-slate-100 selection:text-black">
         <div>
         <span className="text-orange-700 selection:text-orange-700">UPCOMING: </span>
@@ -42,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </a>
           </div>
         </nav>
-        <main className="ml-64 p-8 flex-1">{children}</main>
+        <main className="w-full lg:ml-64 p-4 lg:p-8">{children}</main>
       </div>
     </div>
   )
