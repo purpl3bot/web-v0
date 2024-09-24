@@ -8,7 +8,7 @@ export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="lg:hidden">
+    <>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="p-2 text-gray-500 hover:text-gray-600"
@@ -21,7 +21,7 @@ export default function MobileMenu() {
         )}
       </button>
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-white">
+        <div className="fixed inset-0 z-50 bg-white pt-16">
           <div className="flex flex-col items-center justify-center h-full space-y-8">
             <Link href="/" className="text-2xl font-astloch" onClick={() => setIsOpen(false)}>
               mercedes farias
@@ -38,8 +38,8 @@ export default function MobileMenu() {
             <Link href="/about" className="text-lg" onClick={() => setIsOpen(false)}>
               about
             </Link>
-            <a href="mailto:mechi.farias@gmail.com" className="text-lg" onClick={() => setIsOpen(false)}>
-              email: mechi.farias@gmail.com
+            <a className="text-lg" onClick={() => setIsOpen(false)}>
+              mechi.farias at gmail.com
             </a>
             <a
               href="https://www.instagram.com/mechifariasu.u"
