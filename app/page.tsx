@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import Layout from '@/components/Layout.tsx'
+import Layout from '@/components/Layout'
 
 const images = [
   { src: '/image1.jpg', width: 800, height: 600 },
@@ -21,7 +21,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="flex flex-col items-center justify-center min-h-screen -mt-16 lg:mt-0">
         <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
           <Image
@@ -34,7 +33,7 @@ export default function Home() {
             }}
             onClick={nextImage}
             className="transition-opacity duration-200 cursor-pointer"
-          /> 
+          />
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
