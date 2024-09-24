@@ -52,9 +52,9 @@ export default function Home() {
               style={{
                 objectFit: 'contain',
               }}
-              className={`transition-opacity duration-100 cursor-pointer ${
+              className={`transition-opacity duration-50 cursor-pointer ${
                 index === currentImage ? 'opacity-100' : 'opacity-0'
-              } ${isTransitioning ? 'opacity-10' : ''}`}
+              } ${isTransitioning ? 'opacity-0' : ''}`}
               onClick={nextImage}
             />
           ))}
