@@ -8,7 +8,7 @@ export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <>
+    <div>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="p-2 text-gray-500 hover:text-gray-600"
