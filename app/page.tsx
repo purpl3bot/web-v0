@@ -35,7 +35,7 @@ export default function Home() {
     setTimeout(() => {
       setCurrentImage((prev) => (prev + 1) % images.length)
       setIsTransitioning(false)
-    }, 1000)
+    }, 500)
   }
 
   return (
