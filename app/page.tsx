@@ -34,10 +34,10 @@ export default function Home() {
             onClick={nextImage}
             className="transition-opacity duration-200 cursor-pointer"
           />
-          <p className="selection:bg-stone-100">
-          hola
-          </p>
         </div>
+        <p className="mb-16 selection:bg-stone-100">
+          >
+        </p>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
 garden. a shadow on its surface
