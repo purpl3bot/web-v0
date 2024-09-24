@@ -12,7 +12,7 @@ const images = [
   // Add more images with their respective dimensions
 ]
 
-const TRANSITION_DELAY = 7000 // 7 seconds
+const TRANSITION_DELAY = 10000 // 10 seconds
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -24,7 +24,7 @@ export default function Home() {
       setTimeout(() => {
         setCurrentImage((prev) => (prev + 1) % images.length)
         setIsTransitioning(false)
-      }, 1000) // 1 second for fade out/in effect
+      }, 100) // 1 second for fade out/in effect
     }, TRANSITION_DELAY)
 
     return () => clearInterval(timer)
@@ -52,9 +52,9 @@ export default function Home() {
               style={{
                 objectFit: 'contain',
               }}
-              className={`transition-opacity duration-500 cursor-pointer ${
+              className={`transition-opacity duration-100 cursor-pointer ${
                 index === currentImage ? 'opacity-100' : 'opacity-0'
-              } ${isTransitioning ? 'opacity-50' : ''}`}
+              } ${isTransitioning ? 'opacity-10' : ''}`}
               onClick={nextImage}
             />
           ))}
