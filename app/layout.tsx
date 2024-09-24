@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Mercedes Farias',
   description: 'Portfolio of Mercedes Farias',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.png',
   },
 }
 
