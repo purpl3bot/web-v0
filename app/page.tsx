@@ -12,7 +12,7 @@ const images = [
   // Add more images with their respective dimensions
 ]
 
-const TRANSITION_DELAY = 10000 // 10 seconds
+const TRANSITION_DELAY = 8000 // 8 seconds
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0)
