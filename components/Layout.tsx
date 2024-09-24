@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen">
       <div className="fixed flex-col top-4 right-4 text-lime-100 text-sm selection:bg-slate-100 selection:text-black">
         <div>
-        <span className="text-orange-700">UPCOMING: </span>
+        <span className="text-orange-700 selection:text-orange-700">UPCOMING: </span>
         <span className="text-black">26-29 Sept</span>
         </div>
         <div className="text-black">2Chairs Group Show</div>
