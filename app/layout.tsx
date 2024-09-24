@@ -7,6 +7,9 @@ const astloch = Astloch({ subsets: ['latin'], weight: ['400', '700'], variable: 
 export const metadata = {
   title: 'Mercedes Farias',
   description: 'Portfolio of Mercedes Farias',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
