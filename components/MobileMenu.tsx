@@ -21,7 +21,7 @@ export default function MobileMenu() {
         )}
       </button>
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-slate-100 pt-16">
+        <div className="fixed inset-0 z-50 bg-stone-100 pt-16">
           <div className="flex flex-col items-center justify-center h-full space-y-8">
             <Link href="/" className="text-2xl font-astloch font-bold" onClick={() => setIsOpen(false)}>
               mercedes farias
