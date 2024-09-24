@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
 
@@ -12,52 +12,29 @@ const images = [
   // Add more images with their respective dimensions
 ]
 
-const TRANSITION_DELAY = 8000 // 8 seconds
-
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0)
-  const [isTransitioning, setIsTransitioning] = useState(false)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIsTransitioning(true)
-      setTimeout(() => {
-        setCurrentImage((prev) => (prev + 1) % images.length)
-        setIsTransitioning(false)
-      }, 100) // 1 second for fade out/in effect
-    }, TRANSITION_DELAY)
-
-    return () => clearInterval(timer)
-  }, [])
 
   const nextImage = () => {
-    setIsTransitioning(true)
-    setTimeout(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length)
-      setIsTransitioning(false)
-    }, 500)
+    setCurrentImage((prev) => (prev + 1) % images.length)
   }
 
   return (
     <Layout>
+      <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="flex flex-col items-center justify-center min-h-screen -mt-16 lg:mt-0">
         <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
-          {images.map((image, index) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={`Artwork ${index + 1}`}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
-              style={{
-                objectFit: 'contain',
-              }}
-              className={`transition-opacity duration-50 cursor-pointer ${
-                index === currentImage ? 'opacity-100' : 'opacity-0'
-              } ${isTransitioning ? 'opacity-0' : ''}`}
-              onClick={nextImage}
-            />
-          ))}
+          <Image
+            src={images[currentImage].src}
+            alt={`Artwork ${currentImage + 1}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+            style={{
+              objectFit: 'contain',
+            }}
+            onClick={nextImage}
+            className="transition-opacity duration-200 cursor-pointer"
+          /> >
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
