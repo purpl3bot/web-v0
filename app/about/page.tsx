@@ -4,7 +4,7 @@ import Layout from '@/components/Layout'
 export default function About() {
   return (
     <Layout>
-      <div className="max-w-2xl mx-auto selection:bg-lime-100 selection:text-black">
+      <div className="max-w-4xl mx-auto selection:bg-lime-100 selection:text-black">
         <h2 className="text-2xl mb-6 font-astloch"></h2>
         <div className="space-y-8">
           <div>
@@ -33,8 +33,8 @@ export default function About() {
             <Image
               src="/portrait.jpg?height=400&width=600"
               alt="Portrait"
-              width={600}
-              height={400}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
             />
           </div>
         </div>
