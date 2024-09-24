@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,7 +12,11 @@ export default function MobileMenu() {
         className="p-2 text-gray-500 hover:text-gray-600"
         aria-label="Toggle menu"
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {isOpen ? (
+          <XMarkIcon className="h-6 w-6" />
+        ) : (
+          <Bars3Icon className="h-6 w-6" />
+        )}
       </button>
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-white">
@@ -44,7 +48,7 @@ export default function MobileMenu() {
             >
               instagram
             </a>
-            <div className="text-red-800 text-sm">
+            <div className="text-orange-700 text-sm">
               UPCOMING: 26-29 Sept. 2Chairs Group Show
             </div>
           </div>
