@@ -33,8 +33,7 @@ export default function Home() {
             }}
             onClick={nextImage}
             className="transition-opacity duration-200 cursor-pointer"
-          /> 
-          <div> > </div>
+          /> <p> > </p>
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
