@@ -6,18 +6,21 @@ const MobileMenu = dynamic(() => import('./MobileMenu'), { ssr: false })
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen">
-      <div className="lg:hidden fixed top-4 left-4 z-50">
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-white lg:hidden">
         <MobileMenu />
+        <Link href="/" className="text-2xl font-astloch">
+          mercedes farias
+        </Link>
       </div>
-      <div className="fixed flex-col top-4 right-4 text-lime-100 text-sm selection:bg-slate-100 selection:text-black">
+      <div className="hidden lg:block fixed flex-col top-4 right-4 text-lime-100 text-sm selection:bg-slate-100 selection:text-black">
         <div>
         <span className="text-orange-700 selection:text-orange-700">UPCOMING: </span>
         <span className="text-black">26-29 Sept</span>
         </div>
         <div className="text-black">2Chairs Group Show</div>
       </div>
-      <div className="flex">
-        <nav className="w-64 p-8 flex flex-col justify-between h-screen fixed">
+      <div className="flex  pt-16 lg:pt-0">
+        <nav className="hidden lg:flex w-64 p-8 flex-col justify-between h-screen fixed">
           <div>
             <Link href="/" className="block mb-8 text-3xl font-astloch font-bold hover:bg-lime-100 hover:text-black">
               mercedes farias
