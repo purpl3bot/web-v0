@@ -33,7 +33,6 @@ export default function About() {
             <Image
               src="/portrait.jpg?height=400&width=600"
               alt="Portrait"
-              fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
             />
           </div>
