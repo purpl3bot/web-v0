@@ -5,10 +5,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen">
       <div className="fixed flex-col top-4 right-4 text-lime-100 text-sm selection:bg-slate-100 selection:text-black">
         <div>
-        <span className="text-lime-700">UPCOMING:</span>
+        <span className="text-red-500">UPCOMING: </span>
         <span className="text-black">26-29 Sept</span>
         </div>
-        <div>2Chairs Group Show</div>
+        <div className="text-black">2Chairs Group Show</div>
       </div>
       <div className="flex">
         <nav className="w-64 p-8 flex flex-col justify-between h-screen fixed">
