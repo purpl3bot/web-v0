@@ -20,6 +20,7 @@ export default function About() {
             </ul>
             <h3 className="text-xl mb-4 font-astloch">Group Shows</h3>
             <ul className="list-none list-inside mb-4">
+              <li>2025 - Mignolino, Pinky Projects, Dresden</li>
               <li>2024 - Balancing the Scales, 2Chairs, Berlin</li>
               <li>2024 - Plus one, West Germany, Berlin</li>
               <li>2024 - Solaria, Puticlú, Buenos Aires</li>
