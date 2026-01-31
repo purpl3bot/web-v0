@@ -33,6 +33,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             >
               portfolio
             </a>
+            <a
+              href="/drawings.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mb-4 hover:bg-lime-100 hover:text-black"
+            >
+              drawings
+            </a>
             <Link href="/about" className="block mb-4 hover:bg-lime-100 hover:text-black">
              about
             </Link>
