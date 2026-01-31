@@ -35,6 +35,15 @@ export default function MobileMenu() {
             >
               portfolio
             </a>
+            <a
+              href="/drawings.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg"
+              onClick={() => setIsOpen(false)}
+            >
+              drawings
+            </a>
             <Link href="/about" className="text-lg" onClick={() => setIsOpen(false)}>
               about
             </Link>
