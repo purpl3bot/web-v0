@@ -19,10 +19,21 @@ export default function Home() {
     setCurrentImage((prev) => (prev + 1) % images.length)
   }
 
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length)
+  }
+
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen -mt-16 lg:mt-0">
-        <div className="relative w-full max-w-3xl aspect-[4/3] mb-8">
+        <div className="relative w-full max-w-3xl aspect-[4/3] mb-8 flex items-center">
+          <button
+            onClick={prevImage}
+            className="absolute left-2 z-10 text-stone-400 hover:text-stone-600 text-xl transition-colors"
+            aria-label="Imagen anterior"
+          >
+            {'<'}
+          </button>
           <Image
             src={images[currentImage].src}
             alt={`Artwork ${currentImage + 1}`}
@@ -34,6 +45,13 @@ export default function Home() {
             onClick={nextImage}
             className="transition-opacity duration-200 cursor-pointer"
           />
+          <button
+            onClick={nextImage}
+            className="absolute right-2 z-10 text-stone-400 hover:text-stone-600 text-xl transition-colors"
+            aria-label="Imagen siguiente"
+          >
+            {'>'}
+          </button>
         </div>
         <p className="mb-4 selection:bg-lime-100 selection:text-black">
               there was a small seed in the
