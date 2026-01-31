@@ -11,14 +11,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <Link href="/" className="text-2xl font-astloch font-bold">
           mercedes farias
         </Link>
-      { </div>
+      </div>
       <div className="hidden lg:block fixed flex-col top-4 right-4 text-lime-100 text-sm selection:bg-stone-100 selection:text-black">
         <div>
         <span className="text-orange-700 selection:text-orange-700">UPCOMING: </span>
         <span className="text-black">23.05.2025-.08.06.2025</span>
         </div>
         <div className="text-black">Mignolino. Pinky Projects Group Show</div>
-      </div> }
+      </div>
       <div className="flex lg:pt-0">
         <nav className="hidden lg:flex w-64 p-8 flex-col justify-between h-screen fixed">
           <div>
